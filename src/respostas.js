@@ -3,21 +3,30 @@
   * para selecionar na tabela cliente todos os clientes 
   * que moram em Jaboatão e Olinda
   */
-export const r1 = ``
+export const r1 = 
+`SELECT nome, cidade
+from clientes 
+where cidade in ('Jaboatão dos Guararapes', 'Olinda');`
 
 /* Exercício 2:
   * Escreva entre as áspas da variável "r2" o comando 
   * para ordenar a tabela de produtos a partir do preço 
   * de cada item, em ordem do mais caro par ao mais barato
   */
-export const r2 = ``
+export const r2 = 
+`SELECT nome, preco, descricao
+from produtos 
+order by preco desc;`
 
 /* Exercício 3:
   * Escreva entre as áspas da variável "r3" o comando 
-  * para filtrar os pedidos entre os meses de Outubro (10)
-  * e Novembro (11)
+  * para filtrar os pedidos entre os meses de Dezembro (12)
+  * e Dezembro (18)
   */
-export const r3 = ``
+export const r3 = 
+`SELECT cliente_id, valor_total, data_pedido, status
+from pedidos 
+where data_pedido BETWEEN '2025-12-12' and '2025-12-18';`
 
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
