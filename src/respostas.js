@@ -50,5 +50,5 @@ export const r4 =
 FROM itens_pedido ip
 JOIN pedidos pe ON ip.pedido_id = pe.id
 JOIN produtos pr ON ip.produto_id = pr.id;`
-
+ 
 
